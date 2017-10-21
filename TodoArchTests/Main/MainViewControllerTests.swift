@@ -6,7 +6,7 @@ import Nimble
 class MainViewControllerTests: QuickSpec {
     override func spec() {
 
-        describe("MainViewController") {
+        describe("viewDidLoad") {
 
             var subject: MainViewController!
 
