@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		962AF82B1F9BC8BD006E74E1 /* GreetingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962AF82A1F9BC8BD006E74E1 /* GreetingViewModel.swift */; };
+		962AF82D1F9BCCD9006E74E1 /* GreetingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962AF82C1F9BCCD9006E74E1 /* GreetingViewModelTests.swift */; };
+		962AF8301F9BD96E006E74E1 /* MainPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962AF82F1F9BD96E006E74E1 /* MainPageObject.swift */; };
 		96D28B031F9BB85400F6CFE6 /* MainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D28B021F9BB85400F6CFE6 /* MainViewControllerTests.swift */; };
 		96D28B051F9BB9CF00F6CFE6 /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D28B041F9BB9CF00F6CFE6 /* TestUtils.swift */; };
 		96FEEB6E1F9BA9DE00A2FEC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FEEB6D1F9BA9DE00A2FEC8 /* AppDelegate.swift */; };
@@ -15,7 +17,7 @@
 		96FEEB731F9BA9DE00A2FEC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96FEEB711F9BA9DE00A2FEC8 /* Main.storyboard */; };
 		96FEEB751F9BA9DE00A2FEC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96FEEB741F9BA9DE00A2FEC8 /* Assets.xcassets */; };
 		96FEEB781F9BA9DE00A2FEC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96FEEB761F9BA9DE00A2FEC8 /* LaunchScreen.storyboard */; };
-		96FEEB8E1F9BA9DF00A2FEC8 /* TodoArchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FEEB8D1F9BA9DF00A2FEC8 /* TodoArchUITests.swift */; };
+		96FEEB8E1F9BA9DF00A2FEC8 /* MainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FEEB8D1F9BA9DF00A2FEC8 /* MainUITests.swift */; };
 		BEA0D2754E31283E42A95A11 /* Pods_TodoArchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD53C4102F01CD0AEB653F8 /* Pods_TodoArchTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,8 @@
 		13A6E8203D18B61F5B9A5503 /* Pods-TodoArchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoArchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodoArchTests/Pods-TodoArchTests.release.xcconfig"; sourceTree = "<group>"; };
 		3AD53C4102F01CD0AEB653F8 /* Pods_TodoArchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoArchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		962AF82A1F9BC8BD006E74E1 /* GreetingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewModel.swift; sourceTree = "<group>"; };
+		962AF82C1F9BCCD9006E74E1 /* GreetingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewModelTests.swift; sourceTree = "<group>"; };
+		962AF82F1F9BD96E006E74E1 /* MainPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageObject.swift; sourceTree = "<group>"; };
 		96D28B021F9BB85400F6CFE6 /* MainViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerTests.swift; sourceTree = "<group>"; };
 		96D28B041F9BB9CF00F6CFE6 /* TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
 		96FEEB6A1F9BA9DE00A2FEC8 /* TodoArch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoArch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,7 +56,7 @@
 		96FEEB7E1F9BA9DF00A2FEC8 /* TodoArchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoArchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96FEEB841F9BA9DF00A2FEC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96FEEB891F9BA9DF00A2FEC8 /* TodoArchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoArchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		96FEEB8D1F9BA9DF00A2FEC8 /* TodoArchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoArchUITests.swift; sourceTree = "<group>"; };
+		96FEEB8D1F9BA9DF00A2FEC8 /* MainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITests.swift; sourceTree = "<group>"; };
 		96FEEB8F1F9BA9DF00A2FEC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDB7E61C17907865937D7F30 /* Pods-TodoArchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoArchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodoArchTests/Pods-TodoArchTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +104,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		962AF82E1F9BD91F006E74E1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				962AF82F1F9BD96E006E74E1 /* MainPageObject.swift */,
+				96FEEB8D1F9BA9DF00A2FEC8 /* MainUITests.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		96D28B061F9BC16500F6CFE6 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +152,7 @@
 		96D28B0B1F9BC27000F6CFE6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				962AF82C1F9BCCD9006E74E1 /* GreetingViewModelTests.swift */,
 				96D28B021F9BB85400F6CFE6 /* MainViewControllerTests.swift */,
 			);
 			path = Main;
@@ -189,8 +203,8 @@
 		96FEEB8C1F9BA9DF00A2FEC8 /* TodoArchUITests */ = {
 			isa = PBXGroup;
 			children = (
+				962AF82E1F9BD91F006E74E1 /* Main */,
 				96D28B071F9BC17F00F6CFE6 /* Support */,
-				96FEEB8D1F9BA9DF00A2FEC8 /* TodoArchUITests.swift */,
 			);
 			path = TodoArchUITests;
 			sourceTree = "<group>";
@@ -402,6 +416,7 @@
 			files = (
 				96D28B031F9BB85400F6CFE6 /* MainViewControllerTests.swift in Sources */,
 				96D28B051F9BB9CF00F6CFE6 /* TestUtils.swift in Sources */,
+				962AF82D1F9BCCD9006E74E1 /* GreetingViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +424,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96FEEB8E1F9BA9DF00A2FEC8 /* TodoArchUITests.swift in Sources */,
+				962AF8301F9BD96E006E74E1 /* MainPageObject.swift in Sources */,
+				96FEEB8E1F9BA9DF00A2FEC8 /* MainUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

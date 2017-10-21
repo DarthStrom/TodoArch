@@ -1,10 +1,11 @@
 import UIKit
 
 class GreetingViewModel: UIView {
+    @IBOutlet var name: UITextField!
     @IBOutlet var getStarted: UIButton!
     @IBOutlet var greeting: UILabel!
 
     @IBAction func getStartedTapped() {
-        print("get started tapped")
+        greeting.text = "Hi, \(name.text ?? "")!"
     }
 }

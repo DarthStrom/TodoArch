@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,17 +19,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iju-Dh-htL" userLabel="Greeting View" customClass="GreetingViewModel" customModule="TodoArch" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="318" width="375" height="30"/>
+                                <rect key="frame" x="0.0" y="303" width="375" height="60"/>
                                 <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="saT-b2-b0R" userLabel="Name">
+                                        <rect key="frame" x="8" y="0.0" width="359" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="nameField"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyF-1E-qCo">
-                                        <rect key="frame" x="147.5" y="0.0" width="80" height="30"/>
+                                        <rect key="frame" x="147.5" y="30" width="80" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="getStartedButton"/>
                                         <state key="normal" title="Get Started"/>
                                         <connections>
                                             <action selector="getStartedTapped" destination="Iju-Dh-htL" eventType="touchUpInside" id="3Aa-uc-Bjw"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdC-Gz-waf" userLabel="Greeting Label">
-                                        <rect key="frame" x="187.5" y="30" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="187.5" y="60" width="0.0" height="0.0"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="greetingLabel"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -36,15 +46,19 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="KyF-1E-qCo" firstAttribute="top" secondItem="Iju-Dh-htL" secondAttribute="top" id="OyO-sb-PRO"/>
+                                    <constraint firstItem="saT-b2-b0R" firstAttribute="leading" secondItem="Iju-Dh-htL" secondAttribute="leadingMargin" id="43V-3S-e8a"/>
+                                    <constraint firstItem="saT-b2-b0R" firstAttribute="top" secondItem="Iju-Dh-htL" secondAttribute="top" id="7RB-Zh-lfz"/>
                                     <constraint firstAttribute="bottom" secondItem="EdC-Gz-waf" secondAttribute="bottom" id="SJ4-uJ-hal"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="saT-b2-b0R" secondAttribute="trailing" id="T62-qM-3gu"/>
                                     <constraint firstItem="EdC-Gz-waf" firstAttribute="centerX" secondItem="Iju-Dh-htL" secondAttribute="centerX" id="TWA-BE-37G"/>
+                                    <constraint firstItem="saT-b2-b0R" firstAttribute="bottom" secondItem="KyF-1E-qCo" secondAttribute="top" id="VbO-rW-F6b"/>
                                     <constraint firstItem="KyF-1E-qCo" firstAttribute="centerX" secondItem="Iju-Dh-htL" secondAttribute="centerX" id="YBN-eC-3jt"/>
                                     <constraint firstItem="KyF-1E-qCo" firstAttribute="bottom" secondItem="EdC-Gz-waf" secondAttribute="top" id="x4e-dC-Vj1"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="getStarted" destination="KyF-1E-qCo" id="poo-rG-nHb"/>
                                     <outlet property="greeting" destination="EdC-Gz-waf" id="VSV-0N-vsn"/>
+                                    <outlet property="name" destination="saT-b2-b0R" id="SRf-34-YMy"/>
                                 </connections>
                             </view>
                         </subviews>
