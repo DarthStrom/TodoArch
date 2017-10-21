@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     @IBOutlet var getStarted: UIButton!
     @IBOutlet var greeting: UILabel!
     
