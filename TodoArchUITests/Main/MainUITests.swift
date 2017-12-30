@@ -13,12 +13,4 @@ class MainUITests: XCTestCase {
 
         mainPage = MainPageObject(app: app)
     }
-
-    func testGreeting() {
-        mainPage.nameField.tap()
-        mainPage.nameField.typeText("UITester")
-        mainPage.getStartedButton.tap()
-
-        XCTAssertEqual(mainPage.greetingLabel.label, "Hi, UITester!")
-    }
 }
